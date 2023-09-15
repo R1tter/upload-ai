@@ -75,6 +75,19 @@ export function App() {
           <Separator />
 
           <form className='space-y-6'>
+          <div className='space-y-2'>
+              <Label>Prompt</Label>
+              <Select>
+                <SelectTrigger>
+                  <SelectValue placeholder="Selecione um prompt..."/>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="title">Título do vídeo</SelectItem>
+                  <SelectItem value="description">Descrição do vídeo</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
             <div className='space-y-2'>
               <Label>Modelo</Label>
               <Select disabled defaultValue='gpt3.5'>
